@@ -1,2 +1,5 @@
 node_modules
 distr
+gulpfile.js
+package-lock.json
+package.json
