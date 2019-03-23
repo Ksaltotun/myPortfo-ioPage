@@ -1,15 +1,67 @@
 <div class="skillsContainer">
         <div class="skill--head"><h2>My skills</h2>
         </div>
-        <div class="skill--tabs--head">
-                        <div><span>CSS</span></div>
-                        <div><span>HTML</span></div>
-                        <div><span>another</span></div>
-                        <div><span>another</span></div>
-                        <div><span>another</span></div>
-                        <div><span>another</span></div>
-                        <div><span>another</span></div>
-                        <div><span>another</span></div>
-        </div>
-        <div class="skill--tabs--body"></div>
+        <!-- Tab links -->
+        <div class="tab">
+                <script>
+                        function open_tab(evt, interesting_id) {
+                        // Declare all variables
+                         var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                         tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                        }
+
+                         // Get all elements with class="tablinks" and remove the class "active"
+                         tablinks = document.getElementsByClassName("tablinks");
+                         for (i = 0; i < tablinks.length; i++) {
+                         tablinks[i].className = tablinks[i].className.replace(" active", "");
+                         }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                         document.getElementById(interesting_id).style.display = "block";
+                        evt.currentTarget.className += " active";
+                        }
+                
+                </script>
+                <button class="tablinks" onclick="open_tab(event, 'javascript')">javascript</button>
+                <button class="tablinks" onclick="open_tab(event, 'HTML')">HTML</button>
+                <button class="tablinks" onclick="open_tab(event, 'CSS')">CSS</button>
+                <button class="tablinks" onclick="open_tab(event, 'Python')">Python</button>
+                <button class="tablinks" onclick="open_tab(event, 'Motorcycle')">Motorcycle</button>
+                <button class="tablinks" onclick="open_tab(event, 'Gaming')">Gaming</button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="javascript" class="tabcontent">
+                <h3>javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat sint aperiam eveniet, iure eos? Suscipit cum nam harum qui commodi, aperiam veniam, pariatur atque quia voluptatum voluptate? Facere, officiis!</p>
+              </div>
+              
+              <div id="HTML" class="tabcontent">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptatibus, sit incidunt ad reiciendis odit et reprehenderit voluptate fugit voluptatem sapiente modi itaque ut facilis nostrum earum, quidem inventore corporis.</p> 
+              </div>
+              
+              <div id="CSS" class="tabcontent">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque inventore possimus neque voluptatum quo, maxime temporibus necessitatibus. Eos illum magni, voluptates dolor, quae incidunt in non unde nobis inventore modi.</p>
+              </div>
+              <div id="Python" class="tabcontent">
+                        <h3>Python</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam odit quis, mollitia nihil numquam. Numquam saepe sunt magni voluptates quaerat possimus minus illum amet. Modi tenetur perspiciatis rerum facilis.</p>
+              </div>
+                      
+                  <div id="Motorcycle" class="tabcontent">
+                    <h3>Motorcycle</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quam tempora aut, blanditiis, saepe iste sapiente laboriosam sed voluptates maxime quos perspiciatis consequuntur hic amet pariatur asperiores et fugiat aliquam?</p> 
+                  </div>
+                      
+                  <div id="Gaming" class="tabcontent">
+                     <h3>Gaming</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis provident esse fugit a, incidunt exercitationem ipsa ullam voluptates, amet commodi. Voluptatem accusamus dolor nemo assumenda dolores deserunt voluptatum eius?</p>
+                </div>
+
 </div>
