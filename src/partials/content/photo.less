@@ -1,17 +1,19 @@
 .photo--container{
     
-        height: 900px;
+        height: 90vh;
         margin-top: 10px;
         position: relative;
         width: 100%;
-        background-color: blueviolet;
+        background-color:rgb(36, 59, 88);
+        color: white;
        
 }
+
 .photo--img{
     position: absolute;
     width: inherit;
     height: 100%;
-    background-color: red; 
+    background-color: rgb(36, 59, 88); 
 }
 
 .slide{
@@ -22,6 +24,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    border: 1px solid white;
     
     
 }
@@ -61,7 +64,7 @@
 }
 .photo--control label:after{
     content: "";
-    border: 2px solid black;
+    border: 2px solid white;
     display: block;
     position: absolute;
     top: -4px;
@@ -77,7 +80,7 @@
 #take2:checked ~ .photo--control label:nth-of-type(2),
 #take3:checked ~ .photo--control label:nth-of-type(3)
 {
-    background: crimson;
+    background:white;
     
 }
 #take1:checked ~ .photo--img > .img1,
