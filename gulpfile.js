@@ -23,7 +23,6 @@ var path = {
     fonts: 'src/fonts/**/*.*'
   },
   watch: {
-    js: 'src/**/*.js',
     html: 'src/**/*.html',
     style: 'src/style/**/*.less',
     partials: 'src/partials/**/*.less',
@@ -56,7 +55,6 @@ gulp.task('html:build', function () {
 gulp.task('style:build', function () {
   gulp.src(path.src.style)
     .pipe(less())
-    .pipe(cssmin())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.distr.css))
     .pipe(reload({stream: true}));

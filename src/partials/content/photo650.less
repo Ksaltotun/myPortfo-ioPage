@@ -1,0 +1,98 @@
+@media (max-width: 1200px){
+    .photo--container{
+    
+        height: 900px;
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+        background-color:rgb(36, 59, 88);
+        color: white;
+       
+}
+
+.photo--img{
+    position: absolute;
+    top: 5%;
+    width: inherit;
+    height: 1000px;
+    background-color: rgb(36, 59, 88); 
+}
+
+.slide{
+    position: absolute;
+    width: 90%;
+    padding: 20px;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border: 1px solid white;
+    
+    
+    
+}
+
+
+.img1{ background-image: url(../img/building.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+.img2{ background-image: url(../img/mapedka.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;}
+.img3{ background-image: url(../img/kot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+
+
+.photo--control{
+    position: absolute;
+    top: 96%;
+    left:50%;
+    transform: translate(-50%, 0);
+    
+}
+.photo--container input{
+    display: none;
+ 
+}
+.photo--control label{
+    display: inline-block;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    position: relative;
+    
+}
+.photo--control label:after{
+    content: "";
+    border: 2px solid white;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    height: 12px;
+    width: 12px;
+    padding: 1px;
+
+}
+
+
+#take1:checked ~ .photo--control label:nth-of-type(1),
+#take2:checked ~ .photo--control label:nth-of-type(2),
+#take3:checked ~ .photo--control label:nth-of-type(3)
+{
+    background:white;
+    
+}
+#take1:checked ~ .photo--img > .img1,
+#take2:checked ~ .photo--img > .img2,
+#take3:checked ~ .photo--img > .img3{
+    opacity: 1;
+}
+
+}
