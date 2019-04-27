@@ -1,68 +1,85 @@
 <div class="skillsContainer">
-    <a href="" name="#Skills"></a>
-        <div class="skill--head"><h2>My skills</h2>
+    <a href="" name="Skills"></a>
+        <div class="skill--head"><h2>Мои интересы</h2>
         </div>
         
         <div class="tab">
                 <script>
                         function open_tab(evt, interesting_id) {
-                        // Declare all variables
+                        
                          var i, tabcontent, tablinks;
 
-                        // Get all elements with class="tabcontent" and hide them
+                        
                          tabcontent = document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
                         tabcontent[i].style.display = "none";
                         }
 
-                         // Get all elements with class="tablinks" and remove the class "active"
+                         
                          tablinks = document.getElementsByClassName("tablinks");
                          for (i = 0; i < tablinks.length; i++) {
                          tablinks[i].className = tablinks[i].className.replace(" active", "");
                          }
 
-                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        
                          document.getElementById(interesting_id).style.display = "block";
                         evt.currentTarget.className += " active";
                         }
                 
                 </script>
-                <button class="tablinks" onclick="open_tab(event, 'javascript')">Javascript</button>
-                <button class="tablinks" onclick="open_tab(event, 'HTML')">HTML</button>
-                <button class="tablinks" onclick="open_tab(event, 'CSS')">CSS</button>
-                <button class="tablinks" onclick="open_tab(event, 'Python')">Python</button>
-                <button class="tablinks" onclick="open_tab(event, 'Motorcycle')">Motorcycle</button>
-                <button class="tablinks" onclick="open_tab(event, 'Gaming')">Gaming</button>
+                <button class="tablinks"  style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'javascript')">Javascript</button>
+                <button class="tablinks" style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'HTML')">HTML</button>
+                <button class="tablinks" style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'CSS')">CSS</button>
+                <button class="tablinks" style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'Python')">Python</button>
+                <button class="tablinks" style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'Motorcycle')">Мапедки</button>
+                <button class="tablinks" style="font-family: 'gido'; font-size: 18pt" onclick="open_tab(event, 'Gaming')">Игрища</button>
               </div>
               
               
               <div id="javascript" class="tabcontent">
                 <h3>javascript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat sint aperiam eveniet, iure eos? Suscipit cum nam harum qui commodi, aperiam veniam, pariatur atque quia voluptatum voluptate? Facere, officiis!</p>
+                <p><a href="https://ru.wikipedia.org/wiki/JavaScript" class="refs">Копипаста из Википедии</a> <br><br>
+                  Я не так давно занимаюсь javascript, но, онределенно мне он по душе. Помню первое свое с ним знакомство: ты такой уродливый, но лан, попробуем. Теперь он мой 
+                  хороший товарищ )) Так бывает часто и с людьми. <br>
+                  Пока не знаком с фреймворками JS, чисто на ванильке. Все впереди. Пока не могу определиться, что же лучше React, Angular или Vue? Пишите, короч, кто что на чем. 
+                
+                
+                </p>
               </div>
               
               <div id="HTML" class="tabcontent">
                 <h3>HTML</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptatibus, sit incidunt ad reiciendis odit et reprehenderit voluptate fugit voluptatem sapiente modi itaque ut facilis nostrum earum, quidem inventore corporis.</p> 
+                <p><a href="https://ru.wikipedia.org/wiki/HTML" class="refs">Копипаста из Википедии</a> <br><br>
+                 Тут све ясно )) верстать и верстать наш скудный удел )) Да ладно, если прям по чесноку, то делать разметку страницы скучновато.  
+                </p> 
               </div>
               
               <div id="CSS" class="tabcontent">
                 <h3>CSS</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque inventore possimus neque voluptatum quo, maxime temporibus necessitatibus. Eos illum magni, voluptates dolor, quae incidunt in non unde nobis inventore modi.</p>
+                <p><a href="https://ru.wikipedia.org/wiki/CSS" class="refs">Копипаста из Википедии</a> <br><br>
+                  CSS - сладкий как мед )) Что-что,а это дело каеф. Реально </p>
               </div>
               <div id="Python" class="tabcontent">
                         <h3>Python</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam odit quis, mollitia nihil numquam. Numquam saepe sunt magni voluptates quaerat possimus minus illum amet. Modi tenetur perspiciatis rerum facilis.</p>
+                        <p><a href="https://ru.wikipedia.org/wiki/Python" class="refs">Копипаста из Википедии</a> <br><br>
+                          Хоспаде, это любовь с первого "хелло ворда" )) Невероятно, но я хочу от него детей. Расскажу вкратце, как я на него наткнулся: серфил такой в интернетах, и опа типа Питон. 
+                        думаю, дай посмотрю. Ну и все. Понеслось. <br> На текущий момент я занимаюсь Big Data и Machine learning. 
+                        </p>
               </div>
                       
                   <div id="Motorcycle" class="tabcontent">
-                    <h3>Motorcycle</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quam tempora aut, blanditiis, saepe iste sapiente laboriosam sed voluptates maxime quos perspiciatis consequuntur hic amet pariatur asperiores et fugiat aliquam?</p> 
-                  </div>
+                    <h3>Мотоциклы</h3>
+                  <p>Душой и телом обожаю мотоциклы. Смотрю WSBK, болею, разумеется за Ducati)) На моем You-Tube канале можно посмотреть мою "ласточку" с разных сторон. </p> 
+                  
+                  <div class="vidosik"><iframe  width="100%" height="600" src="https://www.youtube.com/embed/F3G3VBsKSlg" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  
+                </div>
                       
                   <div id="Gaming" class="tabcontent">
-                     <h3>Gaming</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis provident esse fugit a, incidunt exercitationem ipsa ullam voluptates, amet commodi. Voluptatem accusamus dolor nemo assumenda dolores deserunt voluptatum eius?</p>
+                     <h3>Игрища</h3>
+                    <p>Самый интересный пункт (для меня) Играю в комп с детства, и, как мне кажется, продолжу эту историю до самого конца )) Тащусь от РПГ и Стратегий, но не брезгую 
+                      и другими жанрами. Что-то пеерчислять не хватит интернетов! 
+                    </p>
                 </div>
 
 </div>
