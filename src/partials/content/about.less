@@ -4,7 +4,6 @@
     width: 100%;
     height: 780px;
     background-color:rgb(36, 59, 88);
-    justify-content: center;
     align-items: top;
     
 
@@ -16,7 +15,7 @@ h1{
 
 .aboutContainer img{
     position: relative;
-    display: inline-block;
+    display: block;
     z-index: 1;
     height: 500px;
     top: 130px;
@@ -30,7 +29,7 @@ h1{
 }
 .aboutDescription{
     position: relative;
-    display: inline-block;
+    display: block;
     top: 130px;
    
     height: 140px;
@@ -44,4 +43,55 @@ h1{
     font-size: 14pt;
     color: lightgrey;
     text-align: justify;
+}
+@media(max-width: 650px){
+    .aboutContainer{
+        position: relative;  
+        display: flex;    
+        width: 100%;
+        height: 780px;
+        background-color:red;
+        align-items: top;
+        font-size: 20pt;
+        
+    
+    }
+    h1{
+        color: white;
+    }
+    
+    
+    .aboutContainer img{
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        z-index: 1;
+        height: 500px;
+        top: 130px;
+        left: 170px;
+        transform: translate(-50%,0);
+        border: 1px solid white;
+        padding: 2px;
+        margin: 10px;
+        
+    
+    }
+    .aboutDescription{
+        position: relative;
+        display: block;
+        top: 130px;
+       
+        height: 140px;
+        
+        padding: 10px;
+        
+        
+    }
+    .aboutDescription p{
+        font-family: 'gido';
+        font-size: 14pt;
+        color: lightgrey;
+        text-align: justify;
+    }
+
 }

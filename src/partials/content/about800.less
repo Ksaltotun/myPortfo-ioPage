@@ -1,46 +1,49 @@
-@media (max-width: 650px){
+@media (max-width: 800px){
     .aboutContainer{
         position: relative;  
-        display: flex;    
+        display: flex-box;    
         width: 100%;
-        height: 400px;
+        height: 450px;
         background-color:rgb(36, 59, 88);
         justify-content: center;
         align-items: top;
+        padding: 5px;
         
     
     }
+    h1{
+        font-size: 16pt;
+    }
+    .aboutPhoto{
+        float: left;
+
+    }
     
-    
-    .aboutContainer img{
-        position: relative;
-        display: inline-block;
-        z-index: 1;
-        height: 270px;
-        top: 120px;
+    .aboutPhoto img{
         left: 100px;
-        transform: translate(-50%,0);
+        top: 130px;
+        width: 210px;
+        height: 290px;
         border: 1px solid white;
-        
-        margin: 15px;
+        margin: 5px;
         
     
     }
     .aboutDescription{
         position: relative;
-        display: inline-block;
+        clear: both;
+        width: 100%;
         top: 130px;
-       
-        height: 140px;
-        
+        height: 300px;
         padding: 10px;
-        
-        
-    }
-    .aboutDescription p{
+        margin: 5px;
         font-family: 'gido';
-        font-size: 14pt;
+        font-size: 10pt;
         color: lightgrey;
         text-align: justify;
+        overflow: auto;
+        
+        
     }
+    
 }

@@ -1,98 +1,90 @@
-.photo--container{
-    top: 300px;
-    height: 1000px;
-    margin-top: 10px;
+.slider-box{
     position: relative;
+    & h2{
+        color: white;
+        font-size: 20pt;
+    }
     width: 100%;
-    background-color:rgb(36, 59, 88);
-    color: white;
-   
 }
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
 
-.photo--img{
-position: absolute;
-top: 5%;
-width: inherit;
-height: 1000px;
-background-color: rgb(36, 59, 88); 
-}
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    height: 800px;
+  }
 
-.slide{
-position: absolute;
-width: 90%;
-padding: 20px;
-height: 1000px;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-opacity: 0;
-border: 1px solid white;
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
-
-
-}
-
-
-.img1{ background-image: url(../img/building.jpg);
+  @media (min-width: px) {
+    .slider__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+    .photo1{
+      height: 100%; 
+      background-image: url(../img/building.jpg);
+      background-size: cover;
+      }
+    .photo2{
+    height: 100%; 
+    background-image: url(../img/kot.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    }
+    .photo3{
+        height: 100%; 
+        background-image: url(../img/mapedka.jpg);
+        background-size: cover;
+        }
+    .photo4{
+        height: 100%; 
+        background-image: url(../img/pervokurs.jpg);
+        background-size: cover;
+        }
 
-}
-.img2{ background-image: url(../img/mapedka.jpg);
-background-size: cover;
-background-repeat: no-repeat;}
-.img3{ background-image: url(../img/kot.jpg);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-}    
-
-
-.photo--control{
-position: absolute;
-top: 100%;
-left:50%;
-transform: translate(-50%, 0);
-
-}
-.photo--container input{
-display: none;
-
-}
-.photo--control label{
-display: inline-block;
-cursor: pointer;
-height: 10px;
-width: 10px;
-margin: 10px;
-position: relative;
-
-}
-.photo--control label:after{
-content: "";
-border: 2px solid white;
-display: block;
-position: absolute;
-top: -4px;
-left: -4px;
-height: 12px;
-width: 12px;
-padding: 1px;
-
-}
-
-
-#take1:checked ~ .photo--control label:nth-of-type(1),
-#take2:checked ~ .photo--control label:nth-of-type(2),
-#take3:checked ~ .photo--control label:nth-of-type(3)
-{
-background:white;
-
-}
-#take1:checked ~ .photo--img > .img1,
-#take2:checked ~ .photo--img > .img2,
-#take3:checked ~ .photo--img > .img3{
-opacity: 1;
-}
-
-
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    
+    text-align: center;
+    opacity: 0.7;
+    height: 50px;
+    transform: translateY(-50%);
+  }
   
+  .slider__control_left {
+    left: 0;
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid white;
+	border-bottom: 50px solid transparent;
+    
+  }
+
+  .slider__control_right {
+    right: 0;
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid white;
+	border-bottom: 50px solid transparent;
+    
+  }
+  
+  .slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+  }
